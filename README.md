@@ -1,37 +1,65 @@
-# IoT-Based Home Automation Using Digital Logic
+# IoT-Based Home Automation System Using Digital Logic
 
-## Overview
-This project implements a smart home automation system using ESP32, sensors, digital logic gates, and a Wi-Fi-based remote control dashboard.
+## Introduction  
+This project demonstrates an IoT-based home automation system using Arduino and WiFi modules to control appliances based on real-time sensor data like temperature, humidity, motion, and ambient light.
 
-## Features
-- Motion detection
-- Automatic light/fan control
-- Temperature monitoring
-- Wi-Fi dashboard
-- Power optimization
+---
 
-## Components
-- ESP32
-- PIR Motion Sensor
-- DHT11 Temperature Sensor
-- LDR Light Sensor
-- Relay Module
-- Logic Gate ICs (7408, 7432)
+## Objective  
+To automate home lighting based on motion detection and light intensity, and monitor environmental parameters using IoT.
 
-## How It Works
-Sensors detect environmental changes and send signals to ESP32 via digital logic circuits. The ESP32 then triggers actuators and updates a web dashboard accessible via Wi-Fi.
+---
 
-## Circuit Diagram
-## 📌 Breadboard Circuit Image
+## Components Used  
+- ESP32 / NodeMCU  
+- DHT11 Temperature and Humidity Sensor  
+- PIR Motion Sensor  
+- LDR (Light Dependent Resistor)  
+- Relay Module  
+- Breadboard & Jumper Wires  
+- WiFi Network  
 
-![Breadboard Circuit](Circuit-design-of-home-automation-using-IoT-and-smart-phone.png)
+---
 
-## Code
-See `Code/main_code.ino`
+## Block Diagram  
+![Block Diagram](IoT_Block_Diagram.png)
 
-## Author
-Rajdeep Raj Mahto
+---
 
-## Contact
-rajrrm8654@gmail.com
+## Circuit Diagram  
+![Circuit Diagram](Circuit-design-of-home-automation-using-IoT-and-smart-phone.png)
+
+---
+
+## Working  
+- **PIR Sensor** detects motion.  
+- **LDR** measures light intensity.  
+- **Relay Module** controls the connected light.  
+- **DHT11** measures temperature and humidity.  
+- ESP32 hosts a web server to display real-time sensor readings on a web page.
+
+If motion is detected and light level is below a threshold, the system turns on the light automatically via the relay.
+
+---
+
+## Project Files  
+
+-  [Project Report DOCX](IoT_Home_Automation_Project_Report.docx)  
+-  [Arduino Code (main_code.ino)](main_code.ino)  
+
+---
+
+## Features  
+- Real-time automation based on environmental factors  
+- Web interface for monitoring data  
+- Simple and scalable system  
+
+---
+
+## Contact  
+For queries, reach out via email at: **rajrrm8654@gmail.com**
+
+---
+
+> *Internship project under Codectechnologies —8 Jun - 8 July 2025*
 
