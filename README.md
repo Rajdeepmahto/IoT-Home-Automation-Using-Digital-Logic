@@ -22,7 +22,9 @@ This project implements a smart home automation system using ESP32, sensors, dig
 Sensors detect environmental changes and send signals to ESP32 via digital logic circuits. The ESP32 then triggers actuators and updates a web dashboard accessible via Wi-Fi.
 
 ## Circuit Diagram
+## 📌 Breadboard Circuit Image
 
+![Breadboard Circuit](Circuit-design-of-home-automation-using-IoT-and-smart-phone.png)
 
 ## Code
 See `Code/main_code.ino`
